@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://l12qnhqbxdvm"]
+
+[ext_resource type="Script" uid="uid://bfi30krdjw7yf" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 131.0
+offset_right = 497.0
+offset_bottom = 154.0
+text = "A cool boss fight :D"
+
+[node name="Button_Credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 311.0
+offset_right = 533.0
+offset_bottom = 342.0
+text = "Credits
+"
+
+[node name="Button_Play" type="Button" parent="."]
+offset_left = 435.0
+offset_top = 238.0
+offset_right = 560.0
+offset_bottom = 269.0
+text = "Lancer la game"
+
+[node name="Button_Leave" type="Button" parent="."]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 390.0
+offset_right = 535.0
+offset_bottom = 421.0
+text = "Quitter"

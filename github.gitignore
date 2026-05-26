@@ -1,0 +1,10 @@
+# Godot 4+
+.godot/
+*.translation
+*.import
+godot_imports/
+mono_crash.*.json
+.mono/
+data_*/
+*.swp
+*.swo
