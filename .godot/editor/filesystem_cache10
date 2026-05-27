@@ -1,8 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779886520
-BATEOWWW.tscn::PackedScene::1654415891276911377::1779827950::0::1::::<><><>0<>0<><>::
+::res://::1779888015
+game_manager.tscn::PackedScene::1260766917244739909::1779887647::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::5324646050068070670::1779827950::1779829041::1::::<><><>0<>0<>1df752357eeecf802e704a34346c9f59<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main_menu.gd::GDScript::2755625196205236885::1779827950::0::1::::<>Control<><>0<>0<><>::
 main_menu.tscn::PackedScene::827419727477477354::1779827950::0::1::::<><><>0<>0<><>::uid://bfi30krdjw7yf::::res://main_menu.gd
+player.tscn::PackedScene::1744552558001476239::1779887663::0::1::::<><><>0<>0<><>::
 save_menu.gd::GDScript::2432711848535514895::1779827950::0::1::::<>Control<><>0<>0<><>::
 save_menu.tscn::PackedScene::5646890338069954948::1779827950::0::1::::<><><>0<>0<><>::uid://bawon5qntesvn::::res://save_menu.gd
+::res://BATO/::1779888111
+BATEOWWW.tscn::PackedScene::1654415891276911377::1779888111::0::1::::<><><>0<>0<><>::uid://4qtgt7nvh451::::res://BATO/bateowww.gd
+bateowww.gd::GDScript::2069671895190315058::1779888111::0::1::::<>Node2D<><>0<>0<><>::
+::res://BATO/tileset/::1779889698
+tilemap.tscn::PackedScene::5290305814736901132::1779888698::0::1::::<><><>0<>0<><>::
+tilesheet_complete.png::CompressedTexture2D::5122521101419309823::1779889698::1779889698::1::::<><><>0<>0<>738901665d2eb4f5b02f021036f023dc<>res://.godot/imported/tilesheet_complete.png-cce4376684636d121c558579aa1aa05d.ctex::
