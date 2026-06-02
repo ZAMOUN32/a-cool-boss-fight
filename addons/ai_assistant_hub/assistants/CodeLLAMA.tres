@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AIAssistantResource" format=3 uid="uid://kppsoml7qijv"]
+
+[ext_resource type="Resource" uid="uid://c0xq2vafep0gu" path="res://addons/ai_assistant_hub/llm_providers/ollama.tres" id="1_aab6n"]
+[ext_resource type="Script" uid="uid://jfi8jabc0oyr" path="res://addons/ai_assistant_hub/quick_prompts/ai_quick_prompt_resource.gd" id="2_og7d8"]
+[ext_resource type="Script" uid="uid://40bxeuxier06" path="res://addons/ai_assistant_hub/assistants/ai_assistant_resource.gd" id="3_2hxsl"]
+
+[resource]
+script = ExtResource("3_2hxsl")
+ai_model = "codellama:7b"
+llm_provider = ExtResource("1_aab6n")
