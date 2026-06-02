@@ -4,7 +4,12 @@
 [ext_resource type="Script" uid="uid://jfi8jabc0oyr" path="res://addons/ai_assistant_hub/quick_prompts/ai_quick_prompt_resource.gd" id="2_og7d8"]
 [ext_resource type="Script" uid="uid://40bxeuxier06" path="res://addons/ai_assistant_hub/assistants/ai_assistant_resource.gd" id="3_2hxsl"]
 
+[sub_resource type="Resource" id="Resource_aab6n"]
+script = ExtResource("2_og7d8")
+metadata/_custom_type_script = "uid://jfi8jabc0oyr"
+
 [resource]
 script = ExtResource("3_2hxsl")
 ai_model = "codellama:7b"
 llm_provider = ExtResource("1_aab6n")
+quick_prompts = Array[ExtResource("2_og7d8")]([SubResource("Resource_aab6n")])
