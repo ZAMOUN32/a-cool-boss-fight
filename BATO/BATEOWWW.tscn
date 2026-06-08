@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://xtn8ue8soj3f"]
 
 [ext_resource type="Script" uid="uid://4qtgt7nvh451" path="res://BATO/bateowww.gd" id="1_ir2sy"]
+[ext_resource type="PackedScene" uid="uid://chmwtf2m4gneq" path="res://BATO/tileset/tilemap.tscn" id="2_48gv0"]
 
 [node name="Node2D" type="Node2D" unique_id=1776309058]
 script = ExtResource("1_ir2sy")
+
+[node name="TileMap" parent="." unique_id=1185487893 instance=ExtResource("2_48gv0")]

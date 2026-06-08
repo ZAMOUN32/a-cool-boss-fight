@@ -3214,8 +3214,10 @@ texture_region_size = Vector2i(64, 64)
 [sub_resource type="TileSet" id="TileSet_mm0dp"]
 sources/1 = SubResource("TileSetAtlasSource_umhog")
 
-[node name="Node2D" type="Node2D" unique_id=1185487893]
+[node name="TileMap" type="Node2D" unique_id=1185487893]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1028293440]
 tile_set = SubResource("TileSet_mm0dp")
+collision_animatable = true
 format = 2
+layer_0/tile_data = PackedInt32Array(196608, 458753, 5, 196612, 393217, 5, 196616, 393217, 5, 196620, 393217, 5, 196624, 393217, 5, 196628, 524289, 5)

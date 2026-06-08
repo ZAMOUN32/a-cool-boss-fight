@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmpnpuor1ngrc"]
+[gd_scene format=3 uid="uid://cmpnpuor1ngrc"]
 
 [ext_resource type="Script" uid="uid://bawon5qntesvn" path="res://save_menu.gd" id="1_14sge"]
 
-[node name="Control" type="Control"]
+[node name="SaveMenu" type="Control" unique_id=781587663]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,14 +11,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_14sge")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1189262023]
+layout_mode = 0
 offset_left = 442.0
 offset_top = 131.0
 offset_right = 497.0
 offset_bottom = 154.0
 text = "Choisir une sauvegarde"
 
-[node name="Button_Credits" type="Button" parent="."]
+[node name="Button_Credits" type="Button" parent="." unique_id=219109175]
+layout_mode = 0
 offset_left = 700.0
 offset_top = 320.0
 offset_right = 812.0
@@ -26,14 +28,16 @@ offset_bottom = 351.0
 text = "Sauvegarde 2
 "
 
-[node name="Button_Play" type="Button" parent="."]
+[node name="Button_Play" type="Button" parent="." unique_id=1302285694]
+layout_mode = 0
 offset_left = 221.0
 offset_top = 316.0
 offset_right = 346.0
 offset_bottom = 347.0
 text = "Sauvegarde 1"
 
-[node name="Button_Leave" type="Button" parent="."]
+[node name="Button_Leave" type="Button" parent="." unique_id=1917792110]
+layout_mode = 0
 offset_left = 477.0
 offset_top = 449.0
 offset_right = 601.0
