@@ -2,8 +2,12 @@
 
 [ext_resource type="Script" uid="uid://4qtgt7nvh451" path="res://BATO/bateowww.gd" id="1_ir2sy"]
 [ext_resource type="PackedScene" uid="uid://chmwtf2m4gneq" path="res://BATO/tileset/tilemap.tscn" id="2_48gv0"]
+[ext_resource type="PackedScene" uid="uid://y4cr40860f4j" path="res://player.tscn" id="3_y7jx3"]
 
 [node name="Node2D" type="Node2D" unique_id=1776309058]
 script = ExtResource("1_ir2sy")
 
 [node name="TileMap" parent="." unique_id=1185487893 instance=ExtResource("2_48gv0")]
+position = Vector2(27, 119)
+
+[node name="Player" parent="." unique_id=1196779574 instance=ExtResource("3_y7jx3")]

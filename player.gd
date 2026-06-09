@@ -1,33 +1,24 @@
-extends Node2D
+extends CharacterBody2D
 
-# Signal pour les tutoriels (conservé)
-signal tutorial_started(scene_path: String)
+# Vitesse et saut
+@export var speed = 300.0
+@export var jump_velocity = -500.0
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-# Pré-charge des scènes
-@onready var tilemap_scene = preload("res://BATO/tileset/tilemap.tscn")
-@onready var player_scene = preload("res://player.tscn")
+func _physics_process(delta):
+	# Gravité
+	if not is_on_floor():
+		velocity.y += gravity * delta
 
-# Référence au joueur
-var player
+	# Saut (Espace/Entrée)
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = jump_velocity
 
-func _ready():
-	# 1️⃣ Charge la tilemap (elle sera enfant de BATEOWWW)
-	var tilemap = tilemap_scene.instantiate()
-	add_child(tilemap)
+	# Déplacement (flèches gauche/droite)
+	var direction = Input.get_axis("ui_left", "ui_right")
+	if direction:
+		velocity.x = direction * speed
+	else:
+		velocity.x = move_toward(velocity.x, 0, speed)
 
-	# 2️⃣ Charge le joueur à une position de départ (à ajuster)
-	player = player_scene.instantiate()
-	player.position = Vector2(300, 300)  # Coordonnées en pixels (X, Y)
-	add_child(player)
-
-	# 3️⃣ (Optionnel) Conserve le système de portes si tu en as besoin
-	if has_node("Doors"):
-		for door in $Doors.get_children():
-			door.connect("body_entered", _on_door_entered.bind(door))
-
-func _on_door_entered(body, door: Area2D):
-	if body.name == "Player":
-		var scene_path = door.get_meta("tutorial_scene")
-		if scene_path:
-			tutorial_started.emit(scene_path)
-			set_process_input(false)
+	move_and_slide()
