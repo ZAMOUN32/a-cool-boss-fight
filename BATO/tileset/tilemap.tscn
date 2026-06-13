@@ -281,6 +281,7 @@ sources/1 = SubResource("TileSetAtlasSource_umhog")
 tile_set = SubResource("TileSet_mm0dp")
 collision_animatable = true
 format = 2
+layer_0/tile_data = PackedInt32Array(1245203, 131073, 3, 1245207, 131073, 3, 1245211, 131073, 3, 1245215, 131073, 3, 1245219, 131073, 3, 1245223, 131073, 3, 1245227, 131073, 3, 1245199, 131073, 3, 1245231, 458753, 3, 1245195, 327681, 3)
 
 [node name="Layer1" type="TileMapLayer" parent="TileMap" unique_id=481969739]
 use_parent_material = true
