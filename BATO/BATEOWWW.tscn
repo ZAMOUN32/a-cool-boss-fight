@@ -7,4 +7,3 @@
 script = ExtResource("1_ir2sy")
 
 [node name="TileMap" parent="." unique_id=1185487893 instance=ExtResource("2_48gv0")]
-position = Vector2(2, 2)
