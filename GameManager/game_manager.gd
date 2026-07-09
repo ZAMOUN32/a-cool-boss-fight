@@ -15,7 +15,7 @@ func _ready():
 
 	# 2. Charge le joueur à une position de départ
 	player = player_scene.instantiate()
-	player.position = Vector2(400, 300)  # Centre de l'arène (à ajuster)
+	
 	current_map.add_child(player)  # Le joueur est enfant de la map pour la hiérarchie
 
 	# 3. (Optionnel) Gère les signaux ou autres initialisations
