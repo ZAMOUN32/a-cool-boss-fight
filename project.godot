@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="a Menu, a cool boss and an intro"
-run/main_scene="uid://xtn8ue8soj3f"
+run/main_scene="uid://r7yv832nrc1r"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

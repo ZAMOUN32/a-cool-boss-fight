@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://r7yv832nrc1r"]
 
-[ext_resource type="Script" uid="uid://cc2ucmbr6s6s8" path="res://GameManager/game_manager.gd" id="1_5dfvm"]
+[ext_resource type="PackedScene" uid="uid://xtn8ue8soj3f" path="res://GameManager/BATO/BATEOWWW.tscn" id="1_5dfvm"]
+[ext_resource type="PackedScene" uid="uid://y4cr40860f4j" path="res://GameManager/Player/player.tscn" id="2_rt1ce"]
 
-[node name="Node2D" type="Node2D" unique_id=1560396968]
-script = ExtResource("1_5dfvm")
+[node name="Game_Manager" type="Node2D" unique_id=1560396968]
+
+[node name="BATEOWWW" parent="." unique_id=1776309058 instance=ExtResource("1_5dfvm")]
+
+[node name="Player" parent="." unique_id=1610131497 instance=ExtResource("2_rt1ce")]
