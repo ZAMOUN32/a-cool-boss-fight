@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://y4cr40860f4j"]
 
-[ext_resource type="Script" uid="uid://c66ccw4pd84se" path="res://player.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://ch4ke3y8mc1m5" path="res://icon.svg" id="2_i3pqv"]
+[ext_resource type="Script" uid="uid://c66ccw4pd84se" path="res://GameManager/Player/player.gd" id="1_4ntmi"]
+[ext_resource type="Texture2D" uid="uid://ch4ke3y8mc1m5" path="res://icon.svg" id="2_btcbx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
 
 [node name="Player" type="Node2D" unique_id=1610131497]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=564100649]
-script = ExtResource("1_onrkg")
+script = ExtResource("1_4ntmi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1645505533]
 shape = SubResource("RectangleShape2D_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1046644460]
-texture = ExtResource("2_i3pqv")
+texture = ExtResource("2_btcbx")
